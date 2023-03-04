@@ -482,8 +482,8 @@ mix-blend-mode: normal;
     }
 .footer-subscribe {
     min-height: 80px;
-    min-width: 453px;
-    border-radius: 4px;
+    /* min-width: 453px;
+    border-radius: 4px; */
     margin-left: 80px;
 }
 .foot-subscribe {
@@ -501,6 +501,7 @@ line-height: 24px;
 letter-spacing: 0.02em;
 color: var(--color5);
 }
+
 .subscribe-send {
     width: 165px;
     height: 40px;
@@ -510,15 +511,21 @@ color: var(--color5);
     align-items: center;
     padding: 8px 24px;
     gap: 16px;
-    /* position: absolute; */
+    cursor: pointer;
     background: var(--color3);
     border-radius: 4px; 
     margin-left: 24px;  
     border: none; 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+.subscribe-send:is(:hover, :focus){background: var(--color8);}
+
 .subscribe-email {
     width: 264px;
     height: 40px;
+    color: #ffffff;
     box-sizing: border-box;
     background-color:var(--color1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -527,7 +534,7 @@ color: var(--color5);
     padding-left: 16px;
 }
 .subscribe-icon {
-    fill: #E7E9FC;
+    fill: var(--color7);
 }
     /* ********Portfolio*********** */
 .section-pf {
@@ -665,7 +672,7 @@ transition: transform 250ms linear;
     padding: 20px;
     width: 408px;
     height: 584px;
-    background: #FCFCFC;
+    background:var(--color6);
     border-radius: 5px;
    }
    .modal-close-button {
@@ -687,7 +694,6 @@ transition: transform 250ms linear;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
    }
 
    .modal-title {
@@ -697,7 +703,7 @@ transition: transform 250ms linear;
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
    }
 
     .modal-close-icon {
@@ -709,7 +715,7 @@ transition: transform 250ms linear;
     background-color: var(--color4);}
 
     .modal-input:focus{border: 1px solid #4D5AE5;}
-    /* .modal-input:is(:hover, :focus){border: 1px solid #4D5AE5;} */
+    
     .modal-input:focus + .modal-icon {
         fill:var(--color3);
     }
@@ -720,12 +726,14 @@ transition: transform 250ms linear;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 40px;
     outline: transparent;
-    margin-bottom: 8px;
     transition-property: border ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
     }
-    
+    .input-data {
+        display: block;
+        margin-top: 8px;
+    }
     .input-text {
         font-family: 'Roboto';
     font-style: normal;
@@ -734,9 +742,9 @@ transition: transform 250ms linear;
     line-height: 14px;
     letter-spacing: 0.04em;
     color:var(--color8);
-    margin-bottom: 4px;
-    margin-top: 8px;
-    padding-left: 16px;
+    /* margin-bottom: 4px; */
+    
+    /* padding-left: 16px; */
     }
 
     .modal-icon {
@@ -752,7 +760,7 @@ transition: transform 250ms linear;
         line-height: 16px;
         letter-spacing: 0.04em;
         text-decoration-line: underline;
-        color: #4D5AE5;
+        color:var(--color3);
         margin-left: 2px;   
     }
 .modal-wrap {
@@ -789,7 +797,7 @@ transition: transform 250ms linear;
     letter-spacing: 0.04em;
     color: #757575;
     display: flex;
-    align-items: baseline;
+    align-items: center ;
     }
     .input-checkbox:checked + .check-text::before {
         background: var(--color4);
@@ -805,7 +813,7 @@ transition: transform 250ms linear;
     }
     .button-send {
         padding: 16px 32px;
-        left: auto;
+        
     width: 169px;
     height: 56px;
     border: none;
@@ -813,14 +821,12 @@ transition: transform 250ms linear;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-bottom: auto;
-    
+    cursor: pointer;
     transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
     }
-    .subscribe-send:hover {
-        background: var(--color3);  
-    }
+    
     .submit-text {
         font-weight: 500;
         font-size: 16px;
@@ -829,6 +835,3 @@ transition: transform 250ms linear;
         color: var(--color5);
         
     }
-.subscribe-send {
-    cursor: pointer;
-}
