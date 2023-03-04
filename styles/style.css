@@ -120,7 +120,7 @@ body {
 .header-addr-cont {
     display: flex;
     gap: 40px;
-    transition-property: var(--color4);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
@@ -330,7 +330,7 @@ mix-blend-mode: normal;
     .soc-link {
     }
     .staff-soc-icon {
-        fill: var(--color5);
+        fill : var(--color5);
     }
     .staff-soc-link:is(:hover, :focus){ 
     background: var(--color4)
