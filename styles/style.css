@@ -520,7 +520,7 @@ color: var(--color5);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
-.subscribe-send:is(:hover, :focus){background: var(--color8);}
+.subscribe-send:is(:hover, :focus){background: var(--color4);}
 
 .subscribe-email {
     width: 264px;
@@ -703,7 +703,7 @@ transition: transform 250ms linear;
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
    }
 
     .modal-close-icon {
@@ -734,6 +734,9 @@ transition: transform 250ms linear;
         display: block;
         margin-top: 8px;
     }
+    .input-data:first-child {
+        margin-top: 0;
+      }
     .input-text {
         font-family: 'Roboto';
     font-style: normal;
@@ -778,7 +781,7 @@ transition: transform 250ms linear;
     resize: none;
     }
     .modal-checkbox {
-        /* margin-top: 16px; */
+        margin-top: 16px;
         margin-bottom: 24px;
     }
     .check-text::before {
@@ -799,6 +802,9 @@ transition: transform 250ms linear;
     display: flex;
     align-items: center ;
     }
+.input-checkbox {
+    appearance: none;
+}
     .input-checkbox:checked + .check-text::before {
         background: var(--color4);
         border: none;
@@ -811,6 +817,9 @@ transition: transform 250ms linear;
         justify-content: center;
         align-items: center;
     }
+    .button-send:is(:hover, :focus) { 
+        background: var(--color4);}
+
     .button-send {
         padding: 16px 32px;
         
