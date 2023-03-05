@@ -738,14 +738,13 @@ transition: transform 250ms linear;
         margin-top: 0;
       }
     .input-text {
-        font-family: 'Roboto';
-    font-style: normal;
+        display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.04em;
     color:var(--color8);
-    /* margin-bottom: 4px; */
+    margin-bottom: 4px;
     
     /* padding-left: 16px; */
     }
@@ -767,6 +766,7 @@ transition: transform 250ms linear;
         margin-left: 2px;   
     }
 .modal-wrap {
+    display: block;
     position: relative;
     /* margin-bottom: 8px; */
 }
@@ -781,7 +781,7 @@ transition: transform 250ms linear;
     resize: none;
     }
     .modal-checkbox {
-        margin-top: 16px;
+        /* margin-top: 16px; */
         margin-bottom: 24px;
     }
     .check-text::before {
